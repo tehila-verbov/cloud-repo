@@ -15,7 +15,7 @@ def appendToCsv(file_path, data): #ייצוא מילון לcsv
 
 
 my_ssh = SshToServer(r"C:\Users\Tehila\Desktop\Easy High-Tech\טכנולוגיות ענן\linux\my-key-pair.pem", "13.53.131.237", "ubuntu")
-stdout, stderr = my_ssh.runRemoteCommand("python3 /home/ubuntu/final_project/server_side_project.py") #dict
+stdout, stderr = my_ssh.runRemoteCommand("python3 /home/ubuntu/final_project_linux/server_side_project.py") #dict
 stdout_dict = ast.literal_eval(stdout)
 # print(stdout_dict) 
 # print(type(stdout_dict))
